@@ -1,0 +1,11 @@
+{
+  "name": "unit-x-final-problem-set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercises.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
