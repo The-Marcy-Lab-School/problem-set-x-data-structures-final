@@ -5,7 +5,7 @@ describe('containsDuplicates', () => {
     it('returns true if array contains duplicate elements', () => {
         expect(containsDuplicates([1, 2, 3])).toEqual(false);
         expect(containsDuplicates([4, 5, 4])) .toEqual(true);
-        expect(containsDuplicates([4, 4, 5, 5, ])).toEqual(true);
+        expect(containsDuplicates([4, 4, 5, 5])).toEqual(true);
         expect(containsDuplicates([])).toEqual(false);
     });
 });
