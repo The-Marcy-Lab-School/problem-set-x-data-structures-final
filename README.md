@@ -22,7 +22,7 @@ Respond to short response questions in clear, concise sentences directly within 
 
 ### Coding Exercises
 
-1. Implement a function `containsDuplicates` that takes in an array of numbers and returns a boolean indicating if the array contains any duplicates. In the comments of your code, write the runtime complexity AND the space complexity of your implementation.
+1. Implement a function `containsDuplicates` that takes in an array of numbers and returns a boolean indicating if the array contains any duplicates. In the comments of your code, **write the runtime complexity AND the space complexity** of your implementation.
 
 ```js
 containsDuplicates([1, 2, 3]) // false
@@ -31,10 +31,22 @@ containsDuplicates([4, 4, 5, 5]) // true
 containsDuplicates([]) // false
 ```
 
-2. Implement a function `mySort` to sort a list of numbers using an *efficient* sorting algorithm of your choice. **Assume that the list could potentially be very long** and that it is not already sorted. In the comments of your code, write the runtime complexity of your implementation.
+2. Implement a function `mySort` to sort a list of numbers using an *efficient* sorting algorithm of your choice. **Assume that the list could potentially be very long** and that it is not already sorted. In the comments of your code, write the **runtime complexity** of your implementation.
 
-3. Write a function `myFind` that, given a **sorted array** and a number, returns the index of that element. If the element is not in the array, return `-1`. Your solution should be **O(log n) runtime**. It should be not linear, you can do better than that!
+3. Write a function `myFind` that, given a sorted array and a number, returns the index of that element using **[Binary Search](https://www.geeksforgeeks.org/binary-search/)**. If the element is not in the array, return `-1`. Your solution should be **O(log n) runtime**. It should be not linear, you can do better than that! Do not use `Array.prototype.indexOf` of `Array.prototype.findIndex` as those are O(n), linear run time. 
 
-4. **Breadth-First Search**: Implement a breadthFirstSearch function that takes in a graph, a start vertex, and a vertex to search for, and locates the given vertex using a breadth-first search algorith. The function should return the path used to locate the given node. As a reminder, BFS algorithms should search along each level before proceeding further down the graph.
+4. Given a singuly linked list and an integer `num`, write a function `removeNodes` that removes all nodes with a value greater than `num` and returns the head of the linked list. Reference the `Node` class in `linkedList.js` is needed.
+```
+  4 -> 100 -> 5 -> 6 ->
+  x = 50
+  4 -> 5 -> 6 ->
+```
 
-5. Write a function `mergeLists` that takes in two sorted arrays and returns a new array containing the all elements sorted. Please note the runtime of your algorithm in a code comment!
+5. Given the root node of a binary tree, write a function `sumOfBinaryTree` that returns the sum of values of all nodes in the tree. Reference the `BinaryTree` class in `tree.js` if needed. The below tree would return `25` because `4 + 2 + 6 + 1 + 5 + 7`:
+```
+     4
+   /   \
+  2     6
+ /     / \
+1     5   7 
+```
