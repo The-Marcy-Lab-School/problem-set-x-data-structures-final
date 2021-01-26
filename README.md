@@ -31,7 +31,7 @@ containsDuplicates([4, 4, 5, 5]) // true
 containsDuplicates([]) // false
 ```
 
-2. Implement a function `mySort` to sort a list of numbers using an *efficient* sorting algorithm of your choice. **Assume that the list could potentially be very long** and that it is not already sorted. In the comments of your code, write the **runtime complexity** of your implementation.
+2. Implement a function `mySort` to sort a list of numbers using an *efficient* sorting algorithm of your choice. Do not use `Array.prototype.sort()`. **Assume that the list could potentially be very long** and that it is not already sorted. In the comments of your code, write the **runtime complexity** of your implementation.
 
 3. Write a function `myFind` that, given a sorted array and a number, returns the index of that element using **[Binary Search](https://www.geeksforgeeks.org/binary-search/)**. If the element is not in the array, return `-1`. Your solution should be **O(log n) runtime**. It should be not linear, you can do better than that! Do not use `Array.prototype.indexOf` of `Array.prototype.findIndex` as those are O(n), linear run time. 
 
