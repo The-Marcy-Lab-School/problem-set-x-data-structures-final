@@ -1,4 +1,4 @@
-class BinaryTreeNode{
+class BinaryTree{
   constructor(value){
     this.value = value;
     this.left = null;
@@ -6,18 +6,18 @@ class BinaryTreeNode{
   }
 
   insertLeft(value){
-    let left = new BinaryTreeNode(value)
+    let left = new BinaryTree(value)
     this.left = left
     return left
   }
 
   insertRight(value){
-    let right = new BinaryTreeNode(value)
+    let right = new BinaryTree(value)
     this.right = right
     return right  
   }
 }
 
 module.exports = {
-  BinaryTreeNode
+  BinaryTree
 }
