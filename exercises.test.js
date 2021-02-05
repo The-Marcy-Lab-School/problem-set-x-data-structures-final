@@ -1,6 +1,6 @@
 const { mySort, containsDuplicates, myFind, removeNodes, sumOfBinaryTree } = require('./exercises');
 const { Node } = require('./linkedList');
-const { BinaryTree } = require('./tree');
+const { BinaryTreeNode } = require('./tree');
 
 describe('containsDuplicates', () => {
     it('returns true if array contains duplicate elements', () => {
@@ -64,7 +64,7 @@ describe('removeNodes', () => {
 
 describe('sumOfBinaryTree', () => {
     it('can return the sum of a binary tree', () => {
-        const tree = new BinaryTree(4);
+        const tree = new BinaryTreeNode(4);
         const left = tree.insertLeft(2);
         const right = tree.insertRight(6);
         left.insertLeft(1);
